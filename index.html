@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMR Car's</title>
+  <link rel="icon" type="image/png" href="img/menu/car.png">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+  <!-- Custom CSS -->
+  <style>
+    body { background: #f5f5f5; font-family: Poppins, sans-serif; }
+    .hero-img { height: 550px; object-fit: cover; }
+    .brand-logo { width: 80px; height: 50px; object-fit: contain; }
+    .brand-logo2{width:120px;transition: transform 0.3s ease;}
+    .brand-logo2:hover{transform: scale(1.1);}
+    .back-btn { position: fixed; bottom: 20px; right: 20px; display: none; }
+    .offer-box:hover { transform: scale(1.05); transition: 0.3s; }
+    .obc{ height: 250px; width: 325px;}
+    .isize{ width: auto; height: 30px;}
+  </style>
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><b style="font-size: 25px;"><img class="isize " src="img/menu/car.png">SMR Car'S</b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+
+        <!-- Mega Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Brands</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="brands/bmw.html"><img class="brand-logo" src="img/menu/bmw.svg"> BMW</a></li>
+            <li><a class="dropdown-item" href="brands/audi.html"><img class="brand-logo" src="img/menu/audi.svg"> Audi</a></li>
+            <li><a class="dropdown-item" href="brands/benz.html"><img class="brand-logo" src="img/menu/benz.svg"> Mercedes Benz</a></li>
+            <li><a class="dropdown-item" href="brands/toyota.html"><img class="brand-logo" src="img/menu/toyota.svg"> Toyota</a></li>
+            <li><a class="dropdown-item" href="brands/honda.html"><img class="brand-logo" src="img/menu/honda.svg"> Honda</a></li>
+            <li><a class="dropdown-item" href="brands/hyundai.html"><img class="brand-logo" src="img/menu/hyundai.svg"> Hyundai</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="offers.html">Offers</a></li>
+        <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Image Slider -->
+<div id="heroSlider" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active"><img class="d-block w-100 hero-img" src="img/hero1.jpg"></div>
+    <div class="carousel-item"><img class="d-block w-100 hero-img" src="img/hero3.jpg"></div>
+    <div class="carousel-item"><img class="d-block w-100 hero-img" src="img/hero2.jpg"></div>
+    <div class="carousel-item"><img class="d-block w-100 hero-img" src="img/hero4.jpg"></div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroSlider" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon isize"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroSlider" data-bs-slide="next">
+    <span class="carousel-control-next-icon isize"></span>
+  </button>
+</div>
+
+<!-- Daily Offers -->
+<section class="container mt-5">
+  <h2 class="text-center fw-bold mb-3">🔥 Today Special Offers 🔥<a class="btn btn-danger " href="offers.html" ><b>Go to Offers</b></a>
+</h2>
+  <div class="row">
+    <div class="col-md-4"><div class="card offer-box p-3">
+      <img src="img/bmw.jpg" class="card-img-top obc">
+      <h5 class="mt-2 fw-bold">BMW Limited Sale</h5>
+      <p>Save up to ₹2,50,000 — Only Today!</p>
+    </div></div>
+    <div class="col-md-4"><div class="card offer-box p-3">
+      <img src="img/audi.jpg" class="card-img-top obc">
+      <h5 class="mt-2 fw-bold">Audi Premium Offer</h5>
+      <p>Free Insurance + Accessories!</p>
+    </div></div>
+    <div class="col-md-4"><div class="card offer-box p-3">
+      <img src="img/toyota.jpg" class="card-img-top obc">
+      <h5 class="mt-2 fw-bold">Toyota EMI Deal</h5>
+      <p>Starts at ₹9,999/month</p>
+    </div></div>
+  </div>
+</section>
+
+<!-- Top Selling Carousel -->
+<section class="container mt-5">
+  <h2 class="fw-bold text-center mb-4">⭐ Top Selling Cars ⭐</h2>
+  <div class="row">
+    <div class="col-md-4"><img class="w-100 rounded obc" src="img/hyundai.jpg"></div>
+    <div class="col-md-4"><img class="w-100 rounded obc" src="img/benz.jpg"></div>
+    <div class="col-md-4"><img class="w-100 rounded obc" src="img/honda.jpg"></div>
+  </div>
+</section>
+
+<!-- Brands -->
+<section class="container mt-5 mb-5">
+  <h2 class="fw-bold text-center mb-4">🚗 Explore by Brands 🚗</h2>
+
+  <div class="row text-center justify-content-center align-items-center">
+
+    <div class="col-6 col-md-2 mb-4">
+      <a href="brands/bmw.html">
+        <img src="img/menu/bmw.svg" class="brand-logo2" alt="BMW">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-2 mb-4">
+      <a href="brands/audi.html">
+        <img src="img/menu/audi.svg" class="brand-logo2" alt="Audi">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-2 mb-4">
+      <a href="brands/benz.html">
+        <img src="img/menu/benz.svg" class="brand-logo2" alt="Mercedes Benz">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-2 mb-4">
+      <a href="brands/toyota.html">
+        <img src="img/menu/toyota.svg" class="brand-logo2" alt="Toyota">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-2 mb-4">
+      <a href="brands/honda.html">
+        <img src="img/menu/honda.svg" class="brand-logo2" alt="Honda">
+      </a>
+    </div>
+
+    <div class="col-6 col-md-2 mb-4">
+      <a href="brands/hyundai.html">
+        <img src="img/menu/hyundai.svg" class="brand-logo2" alt="Hyundai">
+      </a>
+    </div>
+
+  </div>
+</section>
+
+ 
+<!--Fotter-->
+<footer class="bg-dark text-white pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row">
+
+      <!-- About -->
+      <div class="col-md-4 mb-3">
+        <h5>About SMR Car's Showroom</h5>
+        <p>Your one-stop destination for the latest cars from top brands. Explore, book & drive your dream car!</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-3">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+          <li><a href="offers.html" class="text-white text-decoration-none">Offers</a></li>
+          <li><a href="booking.html" class="text-white text-decoration-none">Booking</a></li>
+          <li><a href="login.html" class="text-white text-decoration-none">Login / Register</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact & Social -->
+      <div class="col-md-4 mb-3">
+        <h5>Contact Us</h5>
+        <p>Email: info@smrcars.com</p>
+        <p>Phone: +91 12345 67890</p>
+        <div>
+          <a href="#" class="text-white me-2"><i class="fab fa-facebook fa-lg"></i></a>
+          <a href="#" class="text-white me-2"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="#" class="text-white me-2"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="bg-light">
+    <div class="text-center">
+      <small>© 2025 SMR Cars'S Showroom. All Rights Reserved.</small>
+    </div>
+  </div>
+</footer>
+
+<!-- FontAwesome CDN for icons -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
+
+<!-- Back to Top Button -->
+<button class="btn btn-danger back-btn" id="backTop">⬆ Back to Top</button>
+
+<script>
+$(window).scroll(function(){
+  if($(this).scrollTop() > 200){ $("#backTop").fadeIn(); }
+  else{ $("#backTop").fadeOut(); }
+});
+$("#backTop").click(function(){ $("html, body").animate({scrollTop:0}, 600); });
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
